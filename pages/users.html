@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Fineline English Academy</title>
+        <link rel="shortcut icon" href="../img/logo.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="logocostado">
+            <p>-FL-</p>
+            </div>
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <a href="./users.html">Sign in</a>
+                        <a href="./test.html">Take your test</a>
+                        <a href="./ourcourses.html">Courses</a>
+                        <a href="./contacts.html">Contact</a>
+                        <a href="./pages/practice.html">Practice</a>
+                    </li>
+                </ul>
+            </nav>>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+    
+            </div>
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Search Here">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+        </header>
+    
+
+    <main>
+        <section class="titulosignin">
+            <h1>FINELINE ENGLISH</h1>
+            <h2>-Never Settle-</h2>
+        </section>
+<div class="containersignin">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>LOG IN</h2>
+                <form>
+                    <input type="email" class="input-box" placeholder="Your E-mail" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">LOG IN</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button type="button" class="signinbtn" onclick="OpenRegister()">I'm New Here</button>
+                <a href="">Forgot Password</a>
+            </div>
+            <div class="card-back">
+                <h2>REGISTER</h2>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your Name" required>
+                    <input type="email" class="input-box" placeholder="Your E-mail" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">LOG IN</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button type="button" class="signinbtn" onclick="OpenLogin()">I have an account</button>
+                <a href="">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js">
+    var card = docuemnt.getElementById("card");
+    function OpenRegister(){
+        card.style.transform = "rotateY(-180deg)";}
+        function OpenLogin(){
+        card.style.transform = "rotateY(0deg)";
+    }
+
+</script>
+    </main>
+    <footer class="pie-pagina">    
+        <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="../img/logo.PNG" alt="Logo de FL">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ipsam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ipsam.</p>
+        </div>
+        <div class="box">
+            <h2>FOLLOW US</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/finelineenglish/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        </div>
+        <div class="grupo2">
+            <small>
+                &copy; 2021 <b>FineLineEnlgish</b> - Todos los derechos reservados.
+            </small>
+        </div>
+    </footer>
+</body>
+</html>

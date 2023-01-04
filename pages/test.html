@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Fineline English Academy</title>
+        <link rel="shortcut icon" href="../img/logo.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="logocostado">
+            <p>-FL-</p>
+            </div>
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <a href="./users.html">Sign in</a>
+                        <a href="./test.html">Take your test</a>
+                        <a href="./ourcourses.html">Courses</a>
+                        <a href="./contacts.html">Contact</a>
+                        <a href="./pages/practice.html">Practice</a>
+                    </li>
+                </ul>
+            </nav>>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+    
+            </div>
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Search Here">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+        </header>
+    
+
+    <main>
+        <div class="testtitulo">
+            <h1>TEST YOUR ENGLISH</h1>
+        </div>
+        <div class="container">
+            <section id="p0">
+                <h3>1- What time do you get up every day? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">I get up at 7 o'clock.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">I gets up at 7 o'clock.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">I like going to the gym in the mornings.
+                </label>
+            </section>
+            <section id="p1">
+                <h3>2- What are you doing now? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">I always work from 8 to 5.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">I am listening to music.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">I went to my sister's house.
+                </label>
+            </section>
+            <section id="p2">
+                <h3>3- What did you do yesterday? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">I don't know.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">I sleep with my dog.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">I went shopping.
+                </label>
+            </section>
+            <section id="p3">
+                <h3>4- What are you plans for this vacations?  </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">I am going to visit my grandma in Sweden.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">I like going to the beach.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">I will go.
+                </label>
+            </section>
+            <section id="p4">
+                <h3>5- Who created the phone? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">It was created by Graham Bell.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Graham Bell creates the phone.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Graham Bell did created the phone.
+                </label>
+            </section>
+            <button onclick="corregir()">SUBMIT</button>
+            <h2 class="correct">Correct Answers: <span id="resultado"></span></h2>
+        </div>
+
+
+    </main>
+    <footer class="pie-pagina">    
+        <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="../img/logo.PNG" alt="Logo de FL">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ipsam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, ipsam.</p>
+        </div>
+        <div class="box">
+            <h2>FOLLOW US</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/finelineenglish/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        </div>
+        <div class="grupo2">
+            <small>
+                &copy; 2021 <b>FineLineEnlgish</b> - Todos los derechos reservados.
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
